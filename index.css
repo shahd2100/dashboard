@@ -1,0 +1,138 @@
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #001;
+  display: flex;
+  
+}
+.main {
+  background-color: #392467;
+  width: 60px;
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.main:hover {
+  width: 260px;
+}
+.main ul {
+  list-style: none;
+  position: relative;
+  height: 95%;
+   
+}
+.main ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.main ul li a:hover,
+.Active,.data-info .box:hover , td:hover{
+  background-color: #ffffff55;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.profile h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.img-box {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border: 3px solid white;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+.img-box img {
+  width: 100%;
+}
+.out {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  background-color: red;
+}
+.main ul li a i {
+  font-size: 30px;
+}
+.content {
+  width: 100%;
+  margin: 10px;
+}
+.title-info {
+  padding: 10px;
+  background-color: #a367b1;
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+border-radius: 8px;
+margin: 10px 0;
+
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.data-info .box{
+height: 150px;
+background-color: #392467;
+flex-basis: 150px;
+flex-grow: 1;
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+.data-info .box i{
+    font-size: 40px;
+
+}
+.data-info .data{
+
+    text-align: center;
+
+}
+.data-info .data span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+      text-align: center;
+      border-spacing: 8px;  
+}
+ td,th{
+    background-color: #392467;
+    height: 40px;
+    border-radius: 8px;
+}
+.price , .count{
+    padding: 6px;
+    border-radius:6px ;
+}
+.price{
+    background-color: #5D3587;
+
+}
+.count{
+    background-color: #FFD1E3;
+    color: #001;
+}
